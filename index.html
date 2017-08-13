@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>shop_home</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="static/favicon.ico">
+
+  <link rel="stylesheet" href="static/flexslider/flexslider.css">
+  <link rel="stylesheet" href="static/css/common.css">
+  <script src="static/js/fontSize.js"></script>
+</head>
+<body>
+
+<!--<div id="globalLoading" class="global-loading">-->
+  <!--<div class="global-loading-logo">-->
+    <!--<div id="globalLoadingAnim" class="global-loading-anim"></div>-->
+  <!--</div>-->
+  <!--<div class="global-loading-text">正在努力为您加载中...</div>-->
+<!--</div>-->
+
+<script src="static/js/loading.js"></script>
+
+<div id="app">
+  <router-view></router-view>
+</div>
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/common.js"></script>
+
+<script defer src="static/flexslider/jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(window).load(function () {
+    $('.flexslider').flexslider({
+      animation: "slide",
+      directionNav: false
+    });
+  });
+</script>
+</body>
+</html>
